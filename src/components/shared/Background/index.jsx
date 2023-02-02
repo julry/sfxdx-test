@@ -8,10 +8,26 @@ import styles from './background.styles.scss';
 export const Background = () => {
 	const initialCoordinates = useMemo(
 		() => [
-			{ top: '-153px', left: '-250px', transform: 'translate(0,0)' },
-			{ top: '-176px', right: '-150px', transform: 'translate(0,0)' },
-			{ bottom: '-163px', left: '-126px', transform: 'translate(0,0)' },
-			{ bottom: '-120px', right: '-150px', transform: 'translate(0,0)' },
+			{
+				top: '-153px',
+				left: '-250px',
+				transform: 'translate(0,0)',
+			},
+			{
+				top: '-176px',
+				right: '-150px',
+				transform: 'translate(0,0)',
+			},
+			{
+				bottom: '-163px',
+				left: '-126px',
+				transform: 'translate(0,0)',
+			},
+			{
+				bottom: '-120px',
+				right: '-150px',
+				transform: 'translate(0,0)',
+			},
 		],
 		[]
 	);
