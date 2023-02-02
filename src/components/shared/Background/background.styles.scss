@@ -1,0 +1,26 @@
+@import "../../../main.styles.scss";
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: $bg-light;
+
+  & svg {
+    display: block;
+  }
+}
+
+.ellipse {
+  position: absolute;
+  transform-origin: 50% 50%;
+  transition: transform 5s ease-in-out;
+
+  @media screen and (max-width: 450px) {
+    max-width: 750px;
+  }
+}

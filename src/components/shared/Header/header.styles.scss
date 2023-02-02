@@ -1,0 +1,59 @@
+@import "../../../main.styles.scss";
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  width: 100vw;
+  padding: 38px 70px;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid $stroke-light;
+
+  .header_btn_login {
+    padding: 10px 12px;
+    border-radius: 20px;
+
+    & img {
+      transition: opacity 0.3s ease-out;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 5.3vw min(26px, 6.9vw);
+    background: transparent;
+    border: none;
+  }
+}
+
+.header_btn_login:hover {
+  & img {
+    opacity: 0.3;
+  }
+}
+
+.logo {
+  width: 148px;
+  height: 24px;
+  margin: auto;
+
+  @media screen and (max-width: 450px) {
+    width: 2.6vw;
+    height: 4.26vw;
+    min-height: 16px;
+    min-width: 98px;
+    margin: 0;
+  }
+}
+
+.header_btn {
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: padding 0.5s ease-out, border-radius 0.5s ease-out;
+  @media screen and (max-width: 450px) {
+    right: min(26px, 6.9vw);
+  }
+}

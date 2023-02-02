@@ -1,0 +1,106 @@
+@import "../../../main.styles.scss";
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: white;
+  transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out, border-radius 0.3s ease-out, color 0.3s ease-out;
+  cursor: pointer;
+
+  &:disabled {
+    background: $disabled-bg;
+    color: $disabled-text;
+  }
+
+  &:hover {
+    background: $hover-color;
+  }
+
+  &:focus {
+    box-shadow: $focus-btn-shadow;
+  }
+
+  &:active {
+    background: $click-color;
+  }
+}
+
+.button_icon {
+  width: $icon_size;
+  height: $icon_size;
+
+  @media screen and (max-width: 450px) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.button_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_icon_left {
+  margin-right: 8px;
+}
+
+.button_icon_right {
+  margin-left: 8px;
+}
+
+.button_sizeL {
+  padding: 12px 32px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button_sizeM {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 32px;
+}
+
+.button_sizeS {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 8px 32px;
+}
+
+.button_sizeXS {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 6px 20px;
+}
+
+.button_type_primary {
+  background: $accent1-primary;
+  box-shadow: 0 8px 16px rgba(8, 216, 153, 0.2);
+}
+
+.button_type_secondary {}
+
+.button_type_tertiary {
+  background: white;
+  color: $accent1-primary;
+
+  &:disabled {
+    background: white;
+    color: $disabled-text;
+  }
+
+  &:hover {
+    background: white;
+    filter: drop-shadow(0px 0px 10px rgba(132, 132, 132, 0.15));
+    color: $hover-color;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:active {
+    background: $click-color;
+  }
+}
