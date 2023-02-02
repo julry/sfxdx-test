@@ -5,9 +5,9 @@ export const Button = (props) => {
 	const { size, icon, type, className, ...otherProps } = props;
 	return (
 		<button
-			className={`${styles.button} ${
-				size ? styles['button_size' + size] : ''
-			} ${type ? styles['button_type_' + type] : ''} ${className}`}
+			className={`${styles.button} ${size ? styles['button_size' + size] : ''} ${
+				type ? styles['button_type_' + type] : ''
+			} ${className}`}
 			{...otherProps}
 		>
 			<div className={styles.button_content}>

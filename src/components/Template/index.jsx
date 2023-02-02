@@ -16,7 +16,11 @@ export const Template = (props) => {
 	const [logType, setLogType] = useState(LOG_TYPES.out);
 	const [disabledBtn, setDisabledBtn] = useState(false);
 	const [accounts, setAccounts] = useState([]);
-	const [modal, setModal] = useState({ shown: false, label: '', text: '' });
+	const [modal, setModal] = useState({
+		shown: false,
+		label: '',
+		text: '',
+	});
 
 	const onGetNewAccounts = (newAccounts) => {
 		setAccounts(newAccounts);

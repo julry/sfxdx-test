@@ -20,30 +20,12 @@ export const Footer = () => {
 				<Logo className={styles.logo} />
 			</div>
 			<div className={styles.networks_block}>
-				<img
-					className={styles.network_icon}
-					src={facebookIcon}
-					alt={'facebook'}
-				/>
-				<img
-					className={styles.network_icon}
-					src={twitterIcon}
-					alt={'twitter'}
-				/>
-				<img
-					className={styles.network_icon}
-					src={youtubeIcon}
-					alt={'youtube'}
-				/>
-				<img
-					className={styles.network_icon}
-					src={instagramIcon}
-					alt={'inst'}
-				/>
+				<img className={styles.network_icon} src={facebookIcon} alt={'facebook'} />
+				<img className={styles.network_icon} src={twitterIcon} alt={'twitter'} />
+				<img className={styles.network_icon} src={youtubeIcon} alt={'youtube'} />
+				<img className={styles.network_icon} src={instagramIcon} alt={'inst'} />
 			</div>
-			<p className={styles.rights}>
-				©2022 All rights reserved. Powered by Atla
-			</p>
+			<p className={styles.rights}>©2022 All rights reserved. Powered by Atla</p>
 		</footer>
 	);
 };
