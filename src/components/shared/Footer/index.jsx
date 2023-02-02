@@ -5,7 +5,7 @@ import {
 	instagramIcon,
 	facebookIcon,
 	youtubeIcon,
-	twitterIcon
+	twitterIcon,
 } from '@shared/icons';
 
 export const Footer = () => {
@@ -17,13 +17,29 @@ export const Footer = () => {
 				<a className={styles.link}>Cookie Policy</a>
 			</div>
 			<div className={styles.logo_wrapper}>
-				<Logo className={styles.logo}/>
+				<Logo className={styles.logo} />
 			</div>
 			<div className={styles.networks_block}>
-				<img className={styles.network_icon} src={facebookIcon} alt={'facebook'}/>
-				<img className={styles.network_icon} src={twitterIcon} alt={'twitter'}/>
-				<img className={styles.network_icon} src={youtubeIcon} alt={'youtube'}/>
-				<img className={styles.network_icon} src={instagramIcon} alt={'inst'}/>
+				<img
+					className={styles.network_icon}
+					src={facebookIcon}
+					alt={'facebook'}
+				/>
+				<img
+					className={styles.network_icon}
+					src={twitterIcon}
+					alt={'twitter'}
+				/>
+				<img
+					className={styles.network_icon}
+					src={youtubeIcon}
+					alt={'youtube'}
+				/>
+				<img
+					className={styles.network_icon}
+					src={instagramIcon}
+					alt={'inst'}
+				/>
 			</div>
 			<p className={styles.rights}>
 				©2022 All rights reserved. Powered by Atla

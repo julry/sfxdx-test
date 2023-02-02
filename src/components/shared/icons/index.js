@@ -13,5 +13,5 @@ export {
 	youtubeIcon,
 	disconnect,
 	close,
-	metamaskLogo
-}
+	metamaskLogo,
+};

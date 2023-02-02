@@ -1,66 +1,66 @@
-@import "../../../main.styles.scss";
+@import '../../../main.styles.scss';
 
 .wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 34;
-  height: 100%;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 34;
+	height: 100%;
+	width: 100%;
 }
 
 .darken {
-  height: 100%;
-  width: 100%;
-  background: $text-primary;
-  opacity: 0.3;
+	height: 100%;
+	width: 100%;
+	background: $text-primary;
+	opacity: 0.3;
 }
 
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 40px;
-  background: white;
-  box-shadow: 0 0 20px rgba(132, 132, 132, 0.2);
-  border-radius: $base-border-radius;
-  min-width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	background: white;
+	box-shadow: 0 0 20px rgba(132, 132, 132, 0.2);
+	border-radius: $base-border-radius;
+	min-width: 400px;
 
-  @media screen and (max-width: 450px) {
-    padding: 20px;
-    min-width: 250px;
-    width: 96vw;
-    max-width: 400px;
-  }
+	@media screen and (max-width: 450px) {
+		padding: 20px;
+		min-width: 250px;
+		width: 96vw;
+		max-width: 400px;
+	}
 }
 
 .title_wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .title {
-  font-size: $subtitle;
-  font-weight: 700;
-  font-family: $gilroyFont;
+	font-size: $subtitle;
+	font-weight: 700;
+	font-family: $gilroyFont;
 }
 
 .close_icon {
-  width: $icon-size;
-  height: $icon-size;
-  cursor: pointer;
+	width: $icon-size;
+	height: $icon-size;
+	cursor: pointer;
 }
 
 .modal_text {
-  font-size: $textM;
-  font-family: $gilroyFont;
-  font-weight: 500;
-  margin: 24px 0;
+	font-size: $textM;
+	font-family: $gilroyFont;
+	font-weight: 500;
+	margin: 24px 0;
 }
 
 .modal_button {
-  width: 100%;
+	width: 100%;
 }
