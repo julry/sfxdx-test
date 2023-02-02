@@ -49,7 +49,6 @@ export const Template = (props) => {
 				.request({ method: 'eth_requestAccounts' })
 				.then((newAccounts) => {
 					onGetNewAccounts(newAccounts);
-					setDisabledBtn(false);
 				})
 				.catch(() => {
 					setModal({
@@ -58,6 +57,9 @@ export const Template = (props) => {
 						text: 'The error occurred while connecting wallet',
 						onClick: () => setModal({shown: false}),
 					});
+				})
+				.finally(() => {
+					setDisabledBtn(false);
 				});
 		} else {
 			setModal({
