@@ -35,10 +35,11 @@ export const Template = (props) => {
 	useEffect(() => {
 		if (MetaMaskOnboarding.isMetaMaskInstalled()) {
 			window.ethereum.on('accountsChanged', onGetNewAccounts);
+
+			return () => {
+				window.ethereum.removeListener('accountsChanged', onGetNewAccounts);
+			};
 		}
-		return () => {
-			window.ethereum.removeListener('accountsChanged', onGetNewAccounts);
-		};
 	}, []);
 
 	useEffect(() => {
