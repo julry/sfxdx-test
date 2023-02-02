@@ -3,4 +3,4 @@ export default {
 	M: 'M',
 	S: 'S',
 	XS: 'XS',
-}
+};

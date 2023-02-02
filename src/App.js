@@ -2,9 +2,7 @@ import React from 'react';
 import { Template } from '@components/Template';
 
 const App = () => {
-    return (
-        <Template />
-    )
-}
+	return <Template />;
+};
 
-export default App
+export default App;
